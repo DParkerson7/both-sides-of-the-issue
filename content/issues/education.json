@@ -1,0 +1,67 @@
+{
+  "slug": "education",
+  "title": "Education",
+  "order": 4,
+  "status": "coming-soon",
+  "icon": "book",
+  "question": "How should the United States run and pay for schools, and should families be able to choose a school other than the one assigned to them?",
+  "summary": "A short page about what schools cost, what students learn, and the argument over school choice. It will not try to swallow every argument about education.",
+  "justFactsUrl": "https://www.justfacts.org/education",
+  "sourceNote": "Further reading only. This outline does not take facts from these pages yet. When the full page is written, government or other primary sources will be cited first, and the Just Facts page will stay linked as further reading. The wording on this site will stay original. No statistics are included here.",
+  "sections": {
+    "what": {
+      "placeholder": true,
+      "paragraphs": [
+        "This section will explain, close to students’ own lives, how public schools are paid for and what people mean by school choice. It will also say, in plain language, that two facts can rise together without one being the cause of the other.",
+        "No statistics will be added until they are checked against primary sources."
+      ]
+    },
+    "disagree": {
+      "placeholder": true,
+      "paragraphs": [
+        "This section will name the disagreement over whether tax dollars should follow a student to a different school, and over whether more spending is the main way to get better learning. It will not pretend that a test score by itself proves what caused it."
+      ]
+    },
+    "sides": {
+      "placeholder": true,
+      "intro": "Each column will hold one side’s strongest fair case, in plain language and at similar length. Neither case is written yet.",
+      "a": {
+        "title": "One side’s strongest case",
+        "paragraphs": [
+          "This column will give the strongest fair case for one view, using checked facts. It will not use insults, and it is not written yet."
+        ]
+      },
+      "b": {
+        "title": "The other side’s strongest case",
+        "paragraphs": [
+          "This column will give the strongest fair case for the other view, under the same rules. It is not written yet."
+        ]
+      }
+    },
+    "agree": {
+      "placeholder": true,
+      "paragraphs": [
+        "This section will look for goals people share, such as wanting students to be able to read, write, and do math, and wanting school money to be spent where it actually helps."
+      ]
+    },
+    "questions": {
+      "placeholder": true,
+      "items": [
+        "The questions will ask how we can tell whether a school policy works, and what a family should be free to choose even if experts disagree."
+      ]
+    }
+  },
+  "words": [],
+  "sources": [
+    {
+      "title": "National Center for Education Statistics",
+      "url": "https://nces.ed.gov/",
+      "note": "The federal statistics agency for schools. No spending or test-score figures are included on this outline."
+    },
+    {
+      "title": "Just Facts: Education",
+      "url": "https://www.justfacts.org/education",
+      "note": "Further reading for later. A long, technical research page. This outline does not copy it."
+    }
+  ]
+}

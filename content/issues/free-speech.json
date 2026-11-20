@@ -1,0 +1,67 @@
+{
+  "slug": "free-speech",
+  "title": "Free Speech",
+  "order": 9,
+  "status": "coming-soon",
+  "icon": "message",
+  "question": "What speech should the law protect, and where do people disagree about the limits?",
+  "summary": "A civics page about the First Amendment: what the government may not punish, and the arguments over speech that is cruel, false, or dangerous.",
+  "justFactsUrl": "https://www.justfacts.org/free_speech",
+  "sourceNote": "Further reading only. This outline does not take facts from these pages yet. When the full page is written, government or other primary sources will be cited first, and the Just Facts page will stay linked as further reading. The wording on this site will stay original. No statistics are included here.",
+  "sections": {
+    "what": {
+      "placeholder": true,
+      "paragraphs": [
+        "This section will explain the First Amendment idea in everyday words: the government generally may not jail or fine people for criticizing it. It will also say that “protected from the government” is not the same thing as “protected from every consequence,” such as a private company or a school with its own rules.",
+        "No statistics will be added until they are checked against primary sources."
+      ]
+    },
+    "disagree": {
+      "placeholder": true,
+      "paragraphs": [
+        "This section will name the disagreements students actually meet: harmful or false speech, speech at school, and speech on websites run by companies. It will not pretend that “let people talk” and “stop harm” are the only two sentences in the argument."
+      ]
+    },
+    "sides": {
+      "placeholder": true,
+      "intro": "Each column will hold one side’s strongest fair case, in plain language and at similar length. Neither case is written yet.",
+      "a": {
+        "title": "One side’s strongest case",
+        "paragraphs": [
+          "This column will give the strongest fair case for one view, using checked facts. It will not use insults, and it is not written yet."
+        ]
+      },
+      "b": {
+        "title": "The other side’s strongest case",
+        "paragraphs": [
+          "This column will give the strongest fair case for the other view, under the same rules. It is not written yet."
+        ]
+      }
+    },
+    "agree": {
+      "placeholder": true,
+      "paragraphs": [
+        "This section will look for shared stakes, such as wanting room to argue about public issues, wanting people not to be threatened, and wanting the rules to be knowable ahead of time."
+      ]
+    },
+    "questions": {
+      "placeholder": true,
+      "items": [
+        "The questions will ask when a limit on speech protects people and when it protects the powerful, and how a listener should handle speech they think is wrong."
+      ]
+    }
+  },
+  "words": [],
+  "sources": [
+    {
+      "title": "The Bill of Rights, National Archives",
+      "url": "https://www.archives.gov/founding-docs/bill-of-rights-transcript",
+      "note": "The First Amendment text. Court cases that draw the limits will be cited when the full page is written. No case outcomes are summarized here."
+    },
+    {
+      "title": "Just Facts: Freedom of Speech",
+      "url": "https://www.justfacts.org/free_speech",
+      "note": "Further reading for later. A long, technical research page. This outline does not copy it."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "both-sides-of-the-issue",
+  "private": true,
+  "description": "A middle-school explainer for divisive U.S. public issues, with the strongest fair case for each side.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "python3 -m http.server 4173 --directory docs"
+  }
+}
