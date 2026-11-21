@@ -1,6 +1,7 @@
 import { cp, mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { renderChart } from "./charts.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const contentDir = path.join(root, "content");
@@ -62,29 +63,45 @@ function soonFlag(section) {
   return section && section.placeholder ? `<p class="soon-flag">Coming soon</p>` : "";
 }
 
-function renderSimpleSection(section) {
+function chartHtml(ids, charts) {
+  if (!ids || !ids.length) return "";
+  return ids
+    .map((id) => {
+      const chart = (charts || []).find((item) => item.id === id);
+      assert(chart, `Missing chart definition: ${id}`);
+      return renderChart(chart, root);
+    })
+    .join("\n");
+}
+
+function renderSimpleSection(section, charts) {
   return `${soonFlag(section)}
     ${paragraphs(section.paragraphs)}
+    ${chartHtml(section.charts, charts)}
+    ${paragraphs(section.after)}
     ${bulletList(section.bullets)}`;
 }
 
-function renderSides(section) {
+function renderSideColumn(side, charts) {
+  return `<h3>${escapeHtml(side.title)}</h3>
+        ${soonFlag(side)}
+        ${paragraphs(side.paragraphs)}
+        ${chartHtml(side.charts, charts)}
+        ${paragraphs(side.after)}
+        ${bulletList(side.bullets)}`;
+}
+
+function renderSides(section, charts) {
   const a = section.a;
   const b = section.b;
   return `${soonFlag(section)}
     ${section.intro ? `<p class="sides-intro">${inline(section.intro)}</p>` : ""}
     <div class="sides">
       <section class="side side-a">
-        <h3>${escapeHtml(a.title)}</h3>
-        ${soonFlag(a)}
-        ${paragraphs(a.paragraphs)}
-        ${bulletList(a.bullets)}
+        ${renderSideColumn(a, charts)}
       </section>
       <section class="side side-b">
-        <h3>${escapeHtml(b.title)}</h3>
-        ${soonFlag(b)}
-        ${paragraphs(b.paragraphs)}
-        ${bulletList(b.bullets)}
+        ${renderSideColumn(b, charts)}
       </section>
     </div>`;
 }
@@ -98,9 +115,9 @@ function renderQuestions(section) {
 function renderPanel(tab, issue) {
   const section = issue.sections[tab.id];
   let body = "";
-  if (tab.id === "sides") body = renderSides(section);
+  if (tab.id === "sides") body = renderSides(section, issue.charts);
   else if (tab.id === "questions") body = renderQuestions(section);
-  else body = renderSimpleSection(section);
+  else body = renderSimpleSection(section, issue.charts);
   const active = tab.id === "what" ? " is-active" : "";
   return `<section class="panel${active}" id="${tab.id}" role="tabpanel" aria-labelledby="tab-${tab.id}" data-panel tabindex="0">
     <h2>${tab.heading}</h2>
@@ -255,6 +272,16 @@ function renderIssue(issue, count) {
   });
 }
 
+function readyIntro(issues) {
+  const ready = issues.filter((issue) => issue.status === "published").map((issue) => issue.title);
+  const waiting = issues.length - ready.length;
+  if (ready.length === 0) return "These pages are outlines, clearly marked Coming soon. They do not include statistics.";
+  const names = ready.length === 1 ? ready[0] : `${ready.slice(0, -1).join(", ")} and ${ready.at(-1)}`;
+  const verb = ready.length === 1 ? "is" : "are";
+  const other = waiting === 1 ? "The other page is an outline" : "The other pages are outlines";
+  return `${names} ${verb} ready to read. ${other}, clearly marked Coming soon. They do not include statistics.`;
+}
+
 function renderHome(site, issues) {
   const cards = issues
     .map((issue) => {
@@ -286,7 +313,7 @@ function renderHome(site, issues) {
     <section aria-labelledby="issues-title">
       <div class="section-heading">
         <h2 id="issues-title">Twelve starter issues</h2>
-        <p>Social Security is ready to read. The other pages are outlines, clearly marked Coming soon. They do not include statistics.</p>
+        <p>${readyIntro(issues)}</p>
       </div>
       <div class="cards">${cards}</div>
     </section>`;
@@ -335,7 +362,8 @@ for (const file of issueFiles) {
 issues.sort((a, b) => a.order - b.order);
 assert(issues.length === 12, `Expected 12 issues, found ${issues.length}`);
 assert(new Set(issues.map((issue) => issue.order)).size === 12, "Issue order numbers must be unique");
-assert(issues.filter((issue) => issue.status === "published").map((issue) => issue.slug).join() === "social-security", "Only Social Security should be published in this starter");
+const published = issues.filter((issue) => issue.status === "published").map((issue) => issue.slug);
+assert(published.includes("social-security") && published.includes("global-warming"), "Social Security and Global Warming should both be published");
 
 await rm(docsDir, { recursive: true, force: true });
 await mkdir(path.join(docsDir, "issues"), { recursive: true });
