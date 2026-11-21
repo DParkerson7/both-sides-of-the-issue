@@ -1,0 +1,172 @@
+{
+  "slug": "social-security",
+  "title": "Social Security",
+  "order": 1,
+  "status": "published",
+  "icon": "shield",
+  "question": "How should the United States help people when they get old, become disabled, or lose a parent or spouse — and how should it pay for that help?",
+  "summary": "A monthly government payment for retirees, people with disabilities, and some families, and a hard question about how to keep paying for it as the country gets older.",
+  "justFactsUrl": "https://www.justfacts.org/socialsecurity",
+  "sourceNote": "This page is an original short explanation for students. It is not a copy of Just Facts, and it is not legal, tax, or investment advice. Figures were checked against the government sources below on November 20, 2026. The $29.3 trillion gap is a present-value total as of January 1, 2026: many future years added together and counted in today’s terms, not one year of spending. Other dollar amounts are for 2025 or 2026, as those sources label them. Projections are the Trustees’ middle estimates unless the sentence says otherwise. Just Facts has a much longer research page, linked below, for further reading.",
+  "sections": {
+    "what": {
+      "paragraphs": [
+        "Social Security is a United States government program. It sends money each month to people who have retired, to people with a serious disability, and to some family members when a worker dies.",
+        "Congress passed the Social Security Act in 1935, during the Great Depression. On April 19, 1935, the House passed it 372 to 33. On June 19, the Senate passed it 77 to 6. President Franklin D. Roosevelt signed it on August 14, 1935. Lawmakers in both parties voted yes. The Social Security Administration’s history tally shows 284 Democrats and 81 Republicans voting yes in the House, and 60 Democrats and 16 Republicans voting yes in the Senate. At first the program was mainly for older workers and their families.",
+        "In 1956, Congress added monthly benefits for many workers with disabilities. President Dwight D. Eisenhower signed that law. At first those checks went to disabled workers ages 50 to 65. The program grew after that.",
+        "The tax you pay is not held in a personal account with your name on it. The Social Security Administration says today’s workers help pay the people getting benefits now. Money that is not needed this year goes into trust funds. There are two: one for retirement and survivors, and one for disability. By law, extra money in those funds is invested in special U.S. Treasury bonds. The government pays interest on the bonds and pays the bonds back when the money is needed for benefits."
+      ],
+      "bullets": [
+        "In December 2025, Social Security paid benefits to 70 million people: about 56 million retired workers and their families, about 8 million disabled workers and their families, and about 6 million survivors of workers who had died.",
+        "Benefit payments in 2025 were about $1.6 trillion.",
+        "A worker and an employer each pay a 6.2% Social Security tax on wages. Together that is 12.4%. A self-employed person pays the full 12.4%. In 2026, the tax applies only to earnings up to $184,500. Pay above that is not taxed for Social Security.",
+        "In 2025, payroll taxes were about 91% of all money coming into the trust funds. Interest, and income tax that some people pay on their benefits, made up most of the rest."
+      ]
+    },
+    "disagree": {
+      "paragraphs": [
+        "Almost everyone wants older people, people with disabilities, and surviving families to have enough to live on. The disagreement is about how to do that as the country gets older.",
+        "One view says Social Security should stay a shared promise. Workers pay taxes, and the law guarantees a benefit. Another view says the taxes coming in will not cover every benefit now written into the law, so the rules should change before the gap is harder to close. Some people who hold that second view also want workers to be allowed to put part of the tax into savings they own.",
+        "The warning about future money comes from the Social Security Trustees. Their middle estimate — the path they treat as the best guess — was published in June 2026. A projection is a careful estimate of the future, not a record of something that has already happened. The Trustees say that significant uncertainty surrounds even this middle estimate. They also publish a lower-cost path and a higher-cost path, because births, jobs, and health can turn out better or worse than expected."
+      ],
+      "bullets": [
+        "Looked at together, the two trust funds are projected to run out of reserves in 2034. Money coming in would then pay 83% of the benefits current law schedules. By 2100, that share is projected to fall to 65%, unless Congress changes the law.",
+        "The retirement-and-survivors fund alone is projected to run short earlier, in 2032, with enough income to pay 78% of its scheduled benefits. The disability fund is projected to be able to pay full scheduled benefits through the whole 75-year window.",
+        "In 2025 there were about 2.6 workers paying in for each person receiving benefits. Under the middle estimate, that ratio falls to about 1.9 workers by 2075. The Trustees say the number of beneficiaries is growing faster than the number of workers.",
+        "Births are a big part of that shift. The Trustees report 3.68 births per woman in 1957, 1.74 in 1976, and an estimated 1.59 in 2025. Over those decades, the age for a full retirement benefit moved from 65 to 67."
+      ]
+    },
+    "sides": {
+      "intro": "Each column is the strongest fair case for that view. The headings are ideas, not political parties. Both columns use the Trustees’ middle estimate described in the previous part.",
+      "a": {
+        "title": "Keep it as a shared insurance program",
+        "paragraphs": [
+          "This side says Social Security is a promise the country makes together, not a stock-market account. In December 2025, 70 million people already received a benefit. For many older people it is a large share of what they live on.",
+          "In 2014 — the year covered by the Social Security Administration’s Income of the Aged Chartbook — Social Security was at least half of income for about 48% of married couples age 65 and older who received it, and for about 71% of beneficiaries who were not married. It was 90% or more of income for about 21% of those married couples and about 43% of beneficiaries who were not married. Those shares are from 2014, not from a new count. A sharp cut would still land hardest on people who have little other income.",
+          "This side also says a common scare story is the wrong picture. Leaders did not secretly empty a cash box. By law, extra Social Security money is invested in Treasury bonds. Those bonds are obligations of the U.S. government. They earn interest, and they are paid back when benefits need the money. Today’s workers paying for today’s retirees is how this insurance was designed. People who live a long time, or who become disabled, are not left depending only on whatever they managed to save.",
+          "People on this side worry that personal investment accounts would tie retirement to the market, would be expensive to set up while today’s retirees still need to be paid, and could weaken a guarantee the country created together.",
+          "The honest version of this view does not say the math works forever. The Trustees’ middle estimate says that, if the law stays as it is, full scheduled benefits cannot be paid once the reserves run out. This side’s answer is to raise more revenue, adjust benefits carefully, or both — and keep a benefit the country guarantees, instead of moving the risk onto each worker’s investments."
+        ]
+      },
+      "b": {
+        "title": "Change the rules so the program can last",
+        "paragraphs": [
+          "This side starts from the same middle estimate. If the law does not change, the combined reserves run out in 2034, and taxes would then cover about 83% of scheduled benefits, heading toward 65% by 2100. Waiting, this side says, piles a bigger change onto fewer years and fewer people.",
+          "The Trustees show what it would take, under that middle estimate, to pay scheduled benefits for 75 years. If Congress acted in 2026, one illustration is a payroll tax rising from 12.40% to 16.65%. Another is a 25.2% cut in scheduled benefits for people already receiving them and for future beneficiaries. A third leaves current beneficiaries alone and cuts scheduled benefits 30.3% for people who become eligible in 2026 or later. If Congress waits until the reserves run out in 2034, the illustrations get larger: a tax rate of 17.30%, or a 28.5% benefit cut.",
+          "Another way the Trustees measure the hole is the 75-year open-group unfunded obligation. As of January 1, 2026, they put it at $29.3 trillion. The program’s total income in 2025 was about $1.45 trillion, so the gap is about 20 times one year of income. About 185 million people paid Social Security taxes in 2025. Dividing the gap by that number comes to about $158,000 per person. That division is only a way to picture the size. It is not a bill, and it is not its own line in the Trustees’ summary table.",
+          "This side says it is misleading to tell people “my money is waiting in a box.” The Social Security Administration says the taxes are not held in a personal account. In 1960, in Flemming v. Nestor, the Supreme Court ruled 5–4 that a person does not have a contractual right to Social Security benefits. The law itself says Congress keeps the right to “alter, amend, or repeal” any part of it. A worker’s own retirement check stops at death. A qualifying spouse or child may then get survivor benefits, and some families receive a one-time death payment that the law caps at $255. That is not the same as savings you own and can leave to anyone you choose.",
+          "So this side wants changes that close the gap sooner. Many people who hold this view also want workers to have the option to put part of their Social Security taxes into an account they own, with rules that limit risky bets — something like the Thrift Savings Plan that federal employees already use. The honest version of this view does not say markets never fall, and it does not say today’s retirees can be left unpaid. It says: face the shortfall now, and give workers a clearer claim on money set aside in their name."
+        ]
+      }
+    },
+    "agree": {
+      "paragraphs": [
+        "Both sides say older Americans, people with disabilities, and surviving families should not be left without support. The Trustees themselves urge lawmakers to act in time for changes to be gradual, so workers and beneficiaries can adjust. People can agree that warning is worth taking seriously even when they disagree about the cure."
+      ],
+      "bullets": [
+        "“It’s my money, sitting in a box” is too simple. So is “the trust fund was looted.” Extra money was lent to the government in the form of bonds. The bonds are legal obligations. Paying them still depends on future federal money.",
+        "Projections are not promises. Births, jobs, health, and choices Congress has not made yet will move the numbers. The Trustees say significant uncertainty surrounds even the middle estimate."
+      ]
+    },
+    "questions": {
+      "intro": "These questions do not have an answer printed under them.",
+      "items": [
+        "If a program sends checks to about 70 million people, how careful should leaders be when they change it?",
+        "The middle estimate says that in 2034, taxes would cover 83% of scheduled benefits unless the law changes. Is it fairer to raise taxes, reduce benefits, raise the retirement age, allow personal accounts, or mix those ideas?",
+        "Who should carry more of the load: today’s workers, today’s retirees, or people who are not born yet?",
+        "Social Security is insurance for the whole country, not a personal piggy bank. What is good about that design? What is hard about it?",
+        "The Trustees publish a better-case path and a worse-case path, and they say the middle numbers are uncertain. How should that change the way we use today’s projections?",
+        "If you could leave savings to your family when you die, would that matter to you? What might be lost if more of Social Security worked that way?"
+      ]
+    }
+  },
+  "words": [
+    {
+      "term": "Payroll tax",
+      "meaning": "A tax taken from a worker’s pay to fund Social Security. For employees, the employer pays the same rate on those wages. A self-employed person pays the combined rate."
+    },
+    {
+      "term": "Trust fund",
+      "meaning": "A government account that holds Social Security money not needed for this year’s benefits. By law, that extra money is invested in special Treasury bonds, which the government pays back with interest."
+    },
+    {
+      "term": "Projection",
+      "meaning": "A careful estimate of what may happen later. It is not a record of what has already happened. The Trustees’ middle projection is their best guess, not a promise."
+    },
+    {
+      "term": "Scheduled benefits",
+      "meaning": "The amounts current law says people are supposed to receive. If the reserves run out and Congress does not change the law, the program may only be able to pay a lower share."
+    },
+    {
+      "term": "Personal account",
+      "meaning": "A proposal to let workers put part of their Social Security taxes into savings or investments that they own. That is different from today’s program, which does not keep a personal account in your name."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The 2026 OASDI Trustees Report",
+      "url": "https://www.ssa.gov/oact/tr/2026/",
+      "note": "The official report on Social Security’s finances, published June 9, 2026. Reserve dates, payable shares, the worker-to-beneficiary ratio, birth rates, the $29.3 trillion gap, and the illustrated tax and benefit changes come from here."
+    },
+    {
+      "title": "The 2026 Trustees Report (PDF)",
+      "url": "https://www.ssa.gov/oact/TR/2026/tr2026.pdf",
+      "note": "The same report as a single document, for readers who want the page numbers behind a figure."
+    },
+    {
+      "title": "Social Security Board of Trustees press release, June 9, 2026",
+      "url": "https://www.ssa.gov/news/en/press/releases/2026-06-09.html",
+      "note": "States the 2034 combined-reserve date, the 83% payable share, about 70 million beneficiaries, about $1.60 trillion in benefits in 2025, and about 185 million people who paid payroll taxes in 2025."
+    },
+    {
+      "title": "What is the maximum taxable earnings amount?",
+      "url": "https://www.ssa.gov/faqs/en/questions/KA-02387.html",
+      "note": "Social Security Administration: in 2026 the tax applies to earnings up to $184,500."
+    },
+    {
+      "title": "Understanding the Benefits",
+      "url": "https://www.ssa.gov/pubs/EN-05-10024.pdf",
+      "note": "Social Security Administration booklet. Says the taxes you pay are not held in a personal account, and that current taxes pay people getting benefits now."
+    },
+    {
+      "title": "What are the Trust Funds?",
+      "url": "https://www.ssa.gov/news/en/press/what-are-the-trust-funds.html",
+      "note": "Explains the two trust funds and the special Treasury bonds that earn interest and are paid back when benefits need the money."
+    },
+    {
+      "title": "1935 congressional vote tallies",
+      "url": "https://www.ssa.gov/history/tally.html",
+      "note": "Social Security Administration history office. House and Senate votes, including the party counts used on this page."
+    },
+    {
+      "title": "History of disability insurance",
+      "url": "https://www.ssa.gov/policy/docs/ssb/v66n3/v66n3p1.html",
+      "note": "Social Security Bulletin. President Eisenhower signed the 1956 amendments on August 1, 1956. At first, monthly benefits went to disabled workers ages 50 to 65."
+    },
+    {
+      "title": "Income of the Aged Chartbook, 2014",
+      "url": "https://www.ssa.gov/policy/docs/chartbooks/income_aged/2014/iac14.html",
+      "note": "Social Security was at least half of income for 47.8% of aged beneficiary married couples and 70.7% of nonmarried beneficiaries, and 90% or more for 20.7% and 42.6%. This page rounds those figures and labels the year."
+    },
+    {
+      "title": "Flemming v. Nestor (1960)",
+      "url": "https://www.law.cornell.edu/supremecourt/text/363/603",
+      "note": "U.S. Supreme Court opinion. Holds that a person does not have a contractual right to Social Security benefits. The decision was 5–4."
+    },
+    {
+      "title": "42 U.S. Code § 1304",
+      "url": "https://www.law.cornell.edu/uscode/text/42/1304",
+      "note": "The statute that reserves to Congress the right to “alter, amend, or repeal” any provision of the Social Security Act."
+    },
+    {
+      "title": "History of the lump-sum death payment",
+      "url": "https://www.ssa.gov/history/lumpsum.html",
+      "note": "Social Security Administration history. The one-time death payment has been capped at $255 since 1954, and current law pays the lesser of three times the primary insurance amount or $255."
+    },
+    {
+      "title": "Just Facts: Social Security",
+      "url": "https://www.justfacts.org/socialsecurity",
+      "note": "Further reading. A long, technical research page from a private nonprofit. This site did not copy its wording or charts. Read it, and the government sources above, before treating any detail as complete."
+    }
+  ]
+}

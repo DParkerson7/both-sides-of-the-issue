@@ -1,0 +1,67 @@
+{
+  "slug": "crime",
+  "title": "Crime",
+  "order": 12,
+  "status": "coming-soon",
+  "icon": "badge",
+  "question": "How should we understand crime in the United States, and what should the justice system do about it?",
+  "summary": "A big-picture page about crime rates and the justice system. It will not be a list of sensational cases.",
+  "justFactsUrl": "https://www.justfacts.org/crime",
+  "sourceNote": "Further reading only. This outline does not take facts from these pages yet. When the full page is written, government or other primary sources will be cited first, and the Just Facts page will stay linked as further reading. The wording on this site will stay original. No statistics are included here.",
+  "sections": {
+    "what": {
+      "placeholder": true,
+      "paragraphs": [
+        "This section will explain, in everyday words, how the country counts crime and what the courts, police, and prisons are each for. The first full version will stay with the big picture, not with graphic case stories.",
+        "No statistics will be added until they are checked against primary sources."
+      ]
+    },
+    "disagree": {
+      "placeholder": true,
+      "paragraphs": [
+        "This section will name the disagreement over what actually reduces crime: tougher punishment, different policing, help that keeps people from offending, or some mix. It will keep a rise or fall in a number from being treated as proof of one cause until the evidence is checked."
+      ]
+    },
+    "sides": {
+      "placeholder": true,
+      "intro": "Each column will hold one side’s strongest fair case, in plain language and at similar length. Neither case is written yet.",
+      "a": {
+        "title": "One side’s strongest case",
+        "paragraphs": [
+          "This column will give the strongest fair case for one view, using checked facts. It will not use insults, and it is not written yet."
+        ]
+      },
+      "b": {
+        "title": "The other side’s strongest case",
+        "paragraphs": [
+          "This column will give the strongest fair case for the other view, under the same rules. It is not written yet."
+        ]
+      }
+    },
+    "agree": {
+      "placeholder": true,
+      "paragraphs": [
+        "This section will look for aims people share, such as wanting fewer victims and wanting a system that punishes the right person and not the wrong one."
+      ]
+    },
+    "questions": {
+      "placeholder": true,
+      "items": [
+        "The questions will ask how a community should weigh safety and fairness, what a crime statistic can and cannot prove, and how to talk about harm without turning pain into entertainment."
+      ]
+    }
+  },
+  "words": [],
+  "sources": [
+    {
+      "title": "Bureau of Justice Statistics",
+      "url": "https://bjs.ojp.gov/",
+      "note": "A federal source for crime and justice statistics. The FBI’s crime data will be checked too. No crime rates are included on this outline."
+    },
+    {
+      "title": "Just Facts: Crime",
+      "url": "https://www.justfacts.org/crime",
+      "note": "Further reading for later. A long, technical research page. This outline does not copy it."
+    }
+  ]
+}

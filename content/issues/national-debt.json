@@ -1,0 +1,67 @@
+{
+  "slug": "national-debt",
+  "title": "National Debt",
+  "order": 6,
+  "status": "coming-soon",
+  "icon": "layers",
+  "question": "How much should the U.S. government borrow, and who has to deal with the bill later?",
+  "summary": "The debt is the money the federal government has borrowed and not yet paid back. This page will explain the size of the argument, not invent a size for the debt.",
+  "justFactsUrl": "https://www.justfacts.org/nationaldebt",
+  "sourceNote": "Further reading only. This outline does not take facts from these pages yet. When the full page is written, government or other primary sources will be cited first, and the Just Facts page will stay linked as further reading. The wording on this site will stay original. No statistics are included here.",
+  "sections": {
+    "what": {
+      "placeholder": true,
+      "paragraphs": [
+        "This section will explain what the national debt is, how it differs from a family’s credit card, and why borrowing can be useful in a crisis and still become a burden. It will not state a dollar total until that total is checked against the Treasury.",
+        "No statistics will be added until they are checked against primary sources."
+      ]
+    },
+    "disagree": {
+      "placeholder": true,
+      "paragraphs": [
+        "This section will name the disagreement over whether today’s borrowing helps the country or quietly hands the bill to younger people. It will also separate “we should borrow less” from “we should cut this particular program.”"
+      ]
+    },
+    "sides": {
+      "placeholder": true,
+      "intro": "Each column will hold one side’s strongest fair case, in plain language and at similar length. Neither case is written yet.",
+      "a": {
+        "title": "One side’s strongest case",
+        "paragraphs": [
+          "This column will give the strongest fair case for one view, using checked facts. It will not use insults, and it is not written yet."
+        ]
+      },
+      "b": {
+        "title": "The other side’s strongest case",
+        "paragraphs": [
+          "This column will give the strongest fair case for the other view, under the same rules. It is not written yet."
+        ]
+      }
+    },
+    "agree": {
+      "placeholder": true,
+      "paragraphs": [
+        "This section will look for shared worries, such as wanting the government to be able to pay its bills and wanting young people not to be stuck with a promise nobody planned for. It pairs naturally with Taxes and with Social Security."
+      ]
+    },
+    "questions": {
+      "placeholder": true,
+      "items": [
+        "The questions will ask when borrowing is worth it, who pays interest, and how a student should read a huge number without losing the human scale."
+      ]
+    }
+  },
+  "words": [],
+  "sources": [
+    {
+      "title": "U.S. Treasury: National Debt",
+      "url": "https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/",
+      "note": "The Treasury’s public guide to the debt. This outline deliberately does not repeat a debt total from it."
+    },
+    {
+      "title": "Just Facts: National Debt",
+      "url": "https://www.justfacts.org/nationaldebt",
+      "note": "Further reading for later. A long, technical research page. This outline does not copy it."
+    }
+  ]
+}
