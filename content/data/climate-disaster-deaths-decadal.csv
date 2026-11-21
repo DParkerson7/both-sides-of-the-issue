@@ -1,0 +1,21 @@
+# Average reported deaths per year from droughts, floods, storms, wildfires, and extreme temperatures.
+# Earthquakes, volcanic eruptions, and landslides are not included.
+# Source: EM-DAT, CRED / UCLouvain (2026), processed by Our World in Data. World rows.
+# Chart data URL: https://ourworldindata.org/grapher/natural-disasters-deaths.csv
+# Retrieved: 2026-11-21
+# EM-DAT counts confirmed deaths plus missing people.
+# 2020-2025 is six years, not a full decade. The value is the average of the years in the file, not a projection.
+period,years_in_average,deaths_per_year
+1900s,10,127984.7
+1910s,10,24718.6
+1920s,10,484895.2
+1930s,10,445617.2
+1940s,10,367866.9
+1950s,10,58330.8
+1960s,10,319535.8
+1970s,10,54925.9
+1980s,10,66150.1
+1990s,10,32086.5
+2000s,10,32001.4
+2010s,10,17532.3
+2020-2025,6,46461.8

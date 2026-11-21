@@ -1,0 +1,135 @@
+# World population used to turn disaster deaths into a rate per 100,000 people.
+# 1900-1949: Gapminder v7 (2022), from Our World in Data population grapher.
+# URL: https://ourworldindata.org/grapher/population.csv
+# 1950-2023: UN World Population Prospects 2024 estimates, from the same grapher.
+# 2024-2025: UN World Population Prospects 2024 medium-variant projections.
+# URL: https://ourworldindata.org/grapher/population-with-un-projections.csv
+# Retrieved: 2026-11-21
+# The 1950-2023 estimates match in both Our World in Data files.
+year,population,source
+1900,1627273655,Gapminder v7 (2022) via Our World in Data
+1901,1639887187,Gapminder v7 (2022) via Our World in Data
+1902,1653151632,Gapminder v7 (2022) via Our World in Data
+1903,1667064512,Gapminder v7 (2022) via Our World in Data
+1904,1681154888,Gapminder v7 (2022) via Our World in Data
+1905,1695427510,Gapminder v7 (2022) via Our World in Data
+1906,1709887300,Gapminder v7 (2022) via Our World in Data
+1907,1724558347,Gapminder v7 (2022) via Our World in Data
+1908,1739441480,Gapminder v7 (2022) via Our World in Data
+1909,1753729257,Gapminder v7 (2022) via Our World in Data
+1910,1767417985,Gapminder v7 (2022) via Our World in Data
+1911,1780422213,Gapminder v7 (2022) via Our World in Data
+1912,1792912374,Gapminder v7 (2022) via Our World in Data
+1913,1804803374,Gapminder v7 (2022) via Our World in Data
+1914,1816884694,Gapminder v7 (2022) via Our World in Data
+1915,1829102909,Gapminder v7 (2022) via Our World in Data
+1916,1841395693,Gapminder v7 (2022) via Our World in Data
+1917,1853777065,Gapminder v7 (2022) via Our World in Data
+1918,1866778878,Gapminder v7 (2022) via Our World in Data
+1919,1880624916,Gapminder v7 (2022) via Our World in Data
+1920,1895426673,Gapminder v7 (2022) via Our World in Data
+1921,1910916276,Gapminder v7 (2022) via Our World in Data
+1922,1927207651,Gapminder v7 (2022) via Our World in Data
+1923,1944216846,Gapminder v7 (2022) via Our World in Data
+1924,1961489200,Gapminder v7 (2022) via Our World in Data
+1925,1979027667,Gapminder v7 (2022) via Our World in Data
+1926,1996813608,Gapminder v7 (2022) via Our World in Data
+1927,2014848732,Gapminder v7 (2022) via Our World in Data
+1928,2033160306,Gapminder v7 (2022) via Our World in Data
+1929,2052125441,Gapminder v7 (2022) via Our World in Data
+1930,2071786711,Gapminder v7 (2022) via Our World in Data
+1931,2092158599,Gapminder v7 (2022) via Our World in Data
+1932,2113215566,Gapminder v7 (2022) via Our World in Data
+1933,2134919626,Gapminder v7 (2022) via Our World in Data
+1934,2156892673,Gapminder v7 (2022) via Our World in Data
+1935,2179140887,Gapminder v7 (2022) via Our World in Data
+1936,2201762907,Gapminder v7 (2022) via Our World in Data
+1937,2224730578,Gapminder v7 (2022) via Our World in Data
+1938,2248127325,Gapminder v7 (2022) via Our World in Data
+1939,2270675197,Gapminder v7 (2022) via Our World in Data
+1940,2291979566,Gapminder v7 (2022) via Our World in Data
+1941,2312098978,Gapminder v7 (2022) via Our World in Data
+1942,2331135363,Gapminder v7 (2022) via Our World in Data
+1943,2349014611,Gapminder v7 (2022) via Our World in Data
+1944,2366918849,Gapminder v7 (2022) via Our World in Data
+1945,2384671779,Gapminder v7 (2022) via Our World in Data
+1946,2402301767,Gapminder v7 (2022) via Our World in Data
+1947,2421291820,Gapminder v7 (2022) via Our World in Data
+1948,2441897177,Gapminder v7 (2022) via Our World in Data
+1949,2467923023,Gapminder v7 (2022) via Our World in Data
+1950,2493092852,UN World Population Prospects 2024 estimates via Our World in Data
+1951,2536927034,UN World Population Prospects 2024 estimates via Our World in Data
+1952,2584086340,UN World Population Prospects 2024 estimates via Our World in Data
+1953,2634106241,UN World Population Prospects 2024 estimates via Our World in Data
+1954,2685894857,UN World Population Prospects 2024 estimates via Our World in Data
+1955,2740213796,UN World Population Prospects 2024 estimates via Our World in Data
+1956,2795409991,UN World Population Prospects 2024 estimates via Our World in Data
+1957,2852618331,UN World Population Prospects 2024 estimates via Our World in Data
+1958,2911249671,UN World Population Prospects 2024 estimates via Our World in Data
+1959,2965950350,UN World Population Prospects 2024 estimates via Our World in Data
+1960,3015470889,UN World Population Prospects 2024 estimates via Our World in Data
+1961,3064869675,UN World Population Prospects 2024 estimates via Our World in Data
+1962,3123374312,UN World Population Prospects 2024 estimates via Our World in Data
+1963,3192807826,UN World Population Prospects 2024 estimates via Our World in Data
+1964,3264487343,UN World Population Prospects 2024 estimates via Our World in Data
+1965,3334533710,UN World Population Prospects 2024 estimates via Our World in Data
+1966,3404041131,UN World Population Prospects 2024 estimates via Our World in Data
+1967,3473412877,UN World Population Prospects 2024 estimates via Our World in Data
+1968,3545187246,UN World Population Prospects 2024 estimates via Our World in Data
+1969,3619491581,UN World Population Prospects 2024 estimates via Our World in Data
+1970,3694683794,UN World Population Prospects 2024 estimates via Our World in Data
+1971,3769847867,UN World Population Prospects 2024 estimates via Our World in Data
+1972,3844917684,UN World Population Prospects 2024 estimates via Our World in Data
+1973,3920805041,UN World Population Prospects 2024 estimates via Our World in Data
+1974,3996416100,UN World Population Prospects 2024 estimates via Our World in Data
+1975,4070735279,UN World Population Prospects 2024 estimates via Our World in Data
+1976,4144246382,UN World Population Prospects 2024 estimates via Our World in Data
+1977,4217863796,UN World Population Prospects 2024 estimates via Our World in Data
+1978,4292097499,UN World Population Prospects 2024 estimates via Our World in Data
+1979,4368539520,UN World Population Prospects 2024 estimates via Our World in Data
+1980,4447606240,UN World Population Prospects 2024 estimates via Our World in Data
+1981,4528777306,UN World Population Prospects 2024 estimates via Our World in Data
+1982,4612673415,UN World Population Prospects 2024 estimates via Our World in Data
+1983,4697327573,UN World Population Prospects 2024 estimates via Our World in Data
+1984,4782175518,UN World Population Prospects 2024 estimates via Our World in Data
+1985,4868943457,UN World Population Prospects 2024 estimates via Our World in Data
+1986,4958072839,UN World Population Prospects 2024 estimates via Our World in Data
+1987,5049746390,UN World Population Prospects 2024 estimates via Our World in Data
+1988,5141992540,UN World Population Prospects 2024 estimates via Our World in Data
+1989,5234431736,UN World Population Prospects 2024 estimates via Our World in Data
+1990,5327803106,UN World Population Prospects 2024 estimates via Our World in Data
+1991,5418735886,UN World Population Prospects 2024 estimates via Our World in Data
+1992,5505989815,UN World Population Prospects 2024 estimates via Our World in Data
+1993,5591544802,UN World Population Prospects 2024 estimates via Our World in Data
+1994,5675551258,UN World Population Prospects 2024 estimates via Our World in Data
+1995,5758878977,UN World Population Prospects 2024 estimates via Our World in Data
+1996,5842055730,UN World Population Prospects 2024 estimates via Our World in Data
+1997,5924787819,UN World Population Prospects 2024 estimates via Our World in Data
+1998,6007066691,UN World Population Prospects 2024 estimates via Our World in Data
+1999,6089006328,UN World Population Prospects 2024 estimates via Our World in Data
+2000,6171702992,UN World Population Prospects 2024 estimates via Our World in Data
+2001,6254936464,UN World Population Prospects 2024 estimates via Our World in Data
+2002,6337730343,UN World Population Prospects 2024 estimates via Our World in Data
+2003,6420361633,UN World Population Prospects 2024 estimates via Our World in Data
+2004,6503377774,UN World Population Prospects 2024 estimates via Our World in Data
+2005,6586970132,UN World Population Prospects 2024 estimates via Our World in Data
+2006,6671452019,UN World Population Prospects 2024 estimates via Our World in Data
+2007,6757308776,UN World Population Prospects 2024 estimates via Our World in Data
+2008,6844457659,UN World Population Prospects 2024 estimates via Our World in Data
+2009,6932766416,UN World Population Prospects 2024 estimates via Our World in Data
+2010,7021732143,UN World Population Prospects 2024 estimates via Our World in Data
+2011,7110923773,UN World Population Prospects 2024 estimates via Our World in Data
+2012,7201202478,UN World Population Prospects 2024 estimates via Our World in Data
+2013,7291793585,UN World Population Prospects 2024 estimates via Our World in Data
+2014,7381616239,UN World Population Prospects 2024 estimates via Our World in Data
+2015,7470491876,UN World Population Prospects 2024 estimates via Our World in Data
+2016,7558554527,UN World Population Prospects 2024 estimates via Our World in Data
+2017,7645617952,UN World Population Prospects 2024 estimates via Our World in Data
+2018,7729902779,UN World Population Prospects 2024 estimates via Our World in Data
+2019,7811293699,UN World Population Prospects 2024 estimates via Our World in Data
+2020,7887001289,UN World Population Prospects 2024 estimates via Our World in Data
+2021,7954448387,UN World Population Prospects 2024 estimates via Our World in Data
+2022,8021407196,UN World Population Prospects 2024 estimates via Our World in Data
+2023,8091734933,UN World Population Prospects 2024 estimates via Our World in Data
+2024,8161972574,UN World Population Prospects 2024 medium-variant projection via Our World in Data
+2025,8231613067,UN World Population Prospects 2024 medium-variant projection via Our World in Data

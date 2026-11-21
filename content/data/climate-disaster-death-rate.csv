@@ -1,0 +1,23 @@
+# Deaths per 100,000 people per year, by decade, for five weather and climate categories.
+# Categories: droughts, floods, storms, wildfires, extreme temperatures. Earthquakes, volcanoes, and landslides are excluded.
+# Rate = total reported deaths in the years divided by the sum of those years' world population, times 100,000.
+# raw_deaths_per_year is the average of the yearly death counts, not divided by population.
+# Deaths: EM-DAT, CRED / UCLouvain (2026), processed by Our World in Data.
+# URL: https://ourworldindata.org/grapher/natural-disasters-deaths.csv
+# Population: see world-population-1900-2025.csv in this folder.
+# Retrieved: 2026-11-21
+# 2020-2025 is six years. 2024 and 2025 population figures are UN medium-variant projections.
+period,rate_per_100k,raw_deaths_per_year,years_in_average
+1900s,7.577,127985,10
+1910s,1.356,24719,10
+1920s,24.595,484895,10
+1930s,20.542,445617,10
+1940s,15.477,367867,10
+1950s,2.145,58331,10
+1960s,9.672,319536,10
+1970s,1.362,54926,10
+1980s,1.369,66150,10
+1990s,0.562,32086,10
+2000s,0.489,32001,10
+2010s,0.236,17532,10
+2020-2025,0.577,46462,6

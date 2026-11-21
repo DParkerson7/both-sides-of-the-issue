@@ -2,66 +2,337 @@
   "slug": "global-warming",
   "title": "Global Warming",
   "order": 3,
-  "status": "coming-soon",
+  "status": "published",
   "icon": "globe",
   "question": "How is the Earth’s climate changing, what role do people play, and what should the country do about it?",
-  "summary": "A page about the science, the impacts, and the policy choices — kept separate, so a disagreement about one of them is not treated as a disagreement about all three.",
+  "summary": "The measurements of carbon dioxide and temperature, kept separate from the argument over how much harm is coming and what the rules should be.",
   "justFactsUrl": "https://www.justfacts.org/globalwarming",
-  "sourceNote": "Further reading only. This outline does not take facts from these pages yet. When the full page is written, government or other primary sources will be cited first, and the Just Facts page will stay linked as further reading. The wording on this site will stay original. No statistics are included here.",
+  "sourceNote": "This page is an original short explanation for students. It is not a copy of Just Facts, and it is not legal, tax, or investment advice. Figures and charts were checked against the sources below on November 21, 2026. A chart uses every year in its data file. Axes include zero when the number is a count, a concentration, or an area, and they include the zero line when the number is a change from an average. Just Facts has a much longer research page, linked below, for further reading. A chart that would compare climate-model output with satellite temperatures was not drawn: this page only charts a data file it downloaded, and that comparison needs a full set of model runs for one layer of the air.",
+  "charts": [
+    {
+      "id": "co2",
+      "type": "line",
+      "title": "Carbon dioxide in the air at Mauna Loa",
+      "shows": "The yearly average amount of carbon dioxide in dry air at Mauna Loa, Hawaii. It was 315.98 parts per million in 1959 and 427.35 in 2025. The vertical axis starts at zero. The early years in NOAA’s file were measured by C. David Keeling at the Scripps Institution of Oceanography.",
+      "doesNotShow": "Temperature, storms, or harvests. A higher amount of this gas is a measurement, not by itself a measurement of harm.",
+      "citedFor": "Both sides, as the basic measurement of carbon dioxide in the air. The concern case treats the rise as the main human push on the climate.",
+      "sourceName": "NOAA Global Monitoring Laboratory",
+      "sourceUrl": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_mlo.txt",
+      "retrieved": "November 21, 2026",
+      "dataFile": "content/data/co2-mauna-loa.csv",
+      "x": "year",
+      "columns": ["year", "ppm"],
+      "yLabel": "Parts per million",
+      "xLabel": "Year",
+      "series": [{ "column": "ppm", "name": "" }]
+    },
+    {
+      "id": "surface-temp",
+      "type": "line",
+      "title": "Global surface temperature, NOAA",
+      "shows": "How far each year’s average surface temperature was from the 1901–2000 average, in degrees Celsius. The number for a year is the average of that year’s twelve monthly values in NOAA’s file. 2024 is the warmest year in the file, about 1.26°C above the baseline. 2025 is the third warmest, about 1.12°C above it. The zero line is the 1901–2000 average.",
+      "doesNotShow": "The temperature of one city, or the temperature in 2100. Another agency can print a different degree number if it chooses a different baseline. This chart is not a forecast.",
+      "citedFor": "The concern case: the planet’s surface has warmed, and the warmest years are the recent ones.",
+      "sourceName": "NOAA National Centers for Environmental Information, Climate at a Glance",
+      "sourceUrl": "https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series",
+      "retrieved": "November 21, 2026",
+      "dataFile": "content/data/noaa-global-temp-annual.csv",
+      "x": "year",
+      "columns": ["year", "celsius"],
+      "yLabel": "°C vs 1901–2000",
+      "xLabel": "Year",
+      "series": [{ "column": "celsius", "name": "" }]
+    },
+    {
+      "id": "sea-level",
+      "type": "line",
+      "title": "Global sea level from satellites",
+      "shows": "The yearly average of NOAA’s satellite sea-level record, in millimeters, from 1993 through 2024. The 2024 average is 103 millimeters, about 10 centimeters, higher than the 1993 average. NOAA’s file also states a straight-line rise of 3.17 millimeters per year, and says that fit does not include a correction for the slow rebound of the Earth’s crust. The zero line is the center of this satellite record, not the sea level of 1900.",
+      "doesNotShow": "Sea level before satellites, or the change at one beach. A global average can rise while one coast does something different. 2025 is left out because the downloaded file stops in February 2025.",
+      "citedFor": "The concern case: measured sea level has risen during the satellite era.",
+      "sourceName": "NOAA Laboratory for Satellite Altimetry",
+      "sourceUrl": "https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/slr/slr_sla_gbl_free_all_66.csv",
+      "retrieved": "November 21, 2026",
+      "dataFile": "content/data/noaa-sea-level-annual.csv",
+      "x": "year",
+      "columns": ["year", "mm"],
+      "yLabel": "Millimeters",
+      "xLabel": "Year",
+      "series": [{ "column": "mm", "name": "" }]
+    },
+    {
+      "id": "arctic-ice",
+      "type": "line",
+      "title": "September Arctic sea ice",
+      "shows": "How much ocean in the Arctic was covered by at least 15 percent ice in September, when the ice is usually at its smallest. 1979 was 7.05 million square kilometers. September 2026 was 4.81. The lowest September in this file is 2012, at 3.57. The vertical axis starts at zero.",
+      "doesNotShow": "Ice thickness, ice in other months, or a drop in every single year. The line goes down from the start of the record, and it also goes up in some years.",
+      "citedFor": "The concern case: late-summer Arctic ice covers less ocean than it did when satellites began watching it.",
+      "sourceName": "NOAA and the National Snow and Ice Data Center, Sea Ice Index",
+      "sourceUrl": "https://noaadata.apps.nsidc.org/NOAA/G02135/north/monthly/data/N_09_extent_v4.0.csv",
+      "retrieved": "November 21, 2026",
+      "dataFile": "content/data/arctic-september-extent.csv",
+      "x": "year",
+      "columns": ["year", "million_km2"],
+      "yLabel": "Million km²",
+      "xLabel": "Year",
+      "series": [{ "column": "million_km2", "name": "" }]
+    },
+    {
+      "id": "uah-vs-surface",
+      "type": "line",
+      "title": "Surface temperature and the satellite record",
+      "shows": "Two measurements from 1979 through 2025, shifted so each line’s own 1991–2020 average sits on zero. The solid line is NOAA’s surface average. The dashed line is the University of Alabama in Huntsville satellite record for the lower atmosphere, kept by Roy Spencer and John Christy. A straight line through the yearly NOAA numbers rises about 0.20°C per decade. The same kind of line through the satellite numbers rises about 0.16°C per decade. The satellite file itself prints 0.16°C per decade for its global column. Shifting the baselines does not change those rises.",
+      "doesNotShow": "Whether a climate model is right or wrong. The two lines measure different layers of the air. The chart also leaves out 2026, because the satellite file did not yet have all twelve months.",
+      "citedFor": "The cost-of-policy case: the lower atmosphere has warmed too, and its rise in this period is a bit slower than the surface record. Both lines go up.",
+      "sourceName": "NOAA Climate at a Glance and the University of Alabama in Huntsville",
+      "sourceUrl": "https://www.nsstc.uah.edu/data/msu/v6.1/tlt/uahncdc_lt_6.1.txt",
+      "retrieved": "November 21, 2026",
+      "dataFile": "content/data/temp-uah-vs-noaa-1991-2020.csv",
+      "x": "year",
+      "columns": ["year", "noaa_c", "uah_c"],
+      "yLabel": "°C vs 1991–2020",
+      "xLabel": "Year",
+      "series": [
+        { "column": "noaa_c", "name": "Surface, NOAA" },
+        { "column": "uah_c", "name": "Lower atmosphere, UAH satellite" }
+      ]
+    },
+    {
+      "id": "disaster-deaths",
+      "type": "bar",
+      "title": "Weather and climate disaster deaths per 100,000 people",
+      "shows": "Reported deaths per 100,000 people per year, by decade, from droughts, floods, storms, wildfires, and extreme heat and cold. Each bar divides the deaths by how many people were alive, so a bigger world does not by itself make the bar taller. Earthquakes, volcanoes, and landslides are not included. The 1920s are the highest bar, 24.60 deaths per 100,000 people per year. The 2010s are 0.24. The last bar is only 2020 through 2025, six years, and its rate is 0.58. Almost all of that rise above the 2010s is the extreme-temperature category, and most of those deaths are in 2022, 2023, and 2024. Extreme temperature here means both extreme heat and extreme cold. Our World in Data says these deaths are often counted only when someone does extra analysis, that some places increasingly do that work, and that the records are too incomplete to read the jump as only a change in the weather. Population for 1900–1949 is Gapminder. For 1950–2023 it is the UN World Population Prospects 2024 estimates. For 2024 and 2025 it is that edition’s medium projection, not a census. The axis starts at zero.",
+      "doesNotShow": "That dangerous weather has become rare. A lower rate can come from warnings, food, medicine, and stronger buildings. The tall early bars are mostly a few huge famines. The extra chart below shows the same decades as raw death counts, before dividing by population.",
+      "citedFor": "The cost-of-policy case: after adjusting for population, the death rate in this record is much lower than it was a century ago.",
+      "sourceName": "EM-DAT via Our World in Data, with world population from Gapminder and the UN",
+      "sourceUrl": "https://ourworldindata.org/grapher/natural-disasters-deaths",
+      "retrieved": "November 21, 2026",
+      "dataFile": "content/data/climate-disaster-death-rate.csv",
+      "x": "period",
+      "y": "rate_per_100k",
+      "columns": ["period", "rate_per_100k", "raw_deaths_per_year"],
+      "yLabel": "Deaths per 100,000 people per year",
+      "xLabel": "Decade",
+      "decimals": 2,
+      "rawColumn": "raw_deaths_per_year",
+      "rawLabel": "Average reported deaths per year, not adjusted for population",
+      "rawSummary": "See the same decades as raw death counts",
+      "rawNote": "These bars are the average number of reported deaths per year before dividing by population. A larger world makes them taller even when the risk to each person is the same."
+    },
+    {
+      "id": "loss-gdp",
+      "type": "line",
+      "title": "Weather disaster losses as a share of the world economy",
+      "shows": "Worldwide weather and climate disaster losses divided by world GDP, each year from 1990 through 2017. The loss numbers are Munich Re’s, published by Roger Pielke Jr. in 2018. They bounce between 0.10% and 0.48% of world GDP. The highest year in the file is 2005, at 0.48%. The last year, 2017, is 0.40%. The axis starts at zero.",
+      "doesNotShow": "Any year after 2017. It also does not show how many storms happened, or how many people died. Dollar damage can grow because people build more valuable things in the path of storms. Dividing by GDP is one way to account for a bigger economy.",
+      "citedFor": "The cost-of-policy case: over these years, losses did not take a steadily larger share of the world economy.",
+      "sourceName": "Pielke (2018), using Munich Re, processed by Our World in Data",
+      "sourceUrl": "https://ourworldindata.org/grapher/weather-losses-share-gdp",
+      "retrieved": "November 21, 2026",
+      "dataFile": "content/data/weather-losses-gdp.csv",
+      "x": "year",
+      "columns": ["year", "percent_of_gdp"],
+      "yLabel": "% of world GDP",
+      "xLabel": "Year",
+      "series": [{ "column": "percent_of_gdp", "name": "" }]
+    },
+    {
+      "id": "cereal-yield",
+      "type": "line",
+      "title": "World cereal harvest per hectare",
+      "shows": "Tonnes of cereal grain harvested per hectare, worldwide, from 1.35 in 1961 to 4.21 in 2024. The axis starts at zero.",
+      "doesNotShow": "Why the harvest rose. Better seeds, fertilizer, and irrigation did much of that work. The chart also does not show how many people are hungry, and it does not separate any help from extra carbon dioxide.",
+      "citedFor": "The cost-of-policy case: global crop yields have risen a lot during the same decades the air gained carbon dioxide and the surface warmed.",
+      "sourceName": "Food and Agriculture Organization, compiled by Our World in Data",
+      "sourceUrl": "https://ourworldindata.org/grapher/cereal-yield",
+      "retrieved": "November 21, 2026",
+      "dataFile": "content/data/cereal-yield-world.csv",
+      "x": "year",
+      "columns": ["year", "tonnes_per_hectare"],
+      "yLabel": "Tonnes per hectare",
+      "xLabel": "Year",
+      "series": [{ "column": "tonnes_per_hectare", "name": "" }]
+    }
+  ],
   "sections": {
     "what": {
-      "placeholder": true,
       "paragraphs": [
-        "This section will explain, in everyday words, what people mean by global warming and the greenhouse effect, and it will keep the science, the impacts, and the policy choices from getting mashed into one claim.",
-        "No statistics will be added until they are checked against primary sources."
+        "Global warming means the Earth’s average temperature rising over many years. It is not the same thing as one hot afternoon, or one cold winter.",
+        "Sunlight warms the Earth. Some of that heat goes back to space. Gases in the air, including carbon dioxide, methane, and water vapor, hold some of the heat in. That is the greenhouse effect. It is part of why the planet is warm enough to live on. The argument is about the extra greenhouse gas people add, mostly by burning coal, oil, and natural gas, and by clearing forests.",
+        "Carbon dioxide is counted in parts per million: how many molecules of the gas are in a million molecules of dry air. At Mauna Loa, in Hawaii, the yearly average was about 316 parts per million in 1959 and about 427 in 2025."
+      ],
+      "charts": ["co2"],
+      "after": [
+        "A temperature number needs a baseline, the set of years a scientist calls normal. Two groups can agree on the warming and still print different degree numbers, because they picked different normals. This page labels every baseline."
+      ],
+      "bullets": [
+        "The Intergovernmental Panel on Climate Change, in its 2023 summary of the science, says human activities, mainly greenhouse-gas emissions, have unequivocally caused global warming. Global surface temperature in 2011–2020 was 1.09°C above 1850–1900. The very likely range around that figure is 0.95°C to 1.20°C.",
+        "For the years from 1850–1900 to 2010–2019, the same summary’s best estimate of the human-caused warming is 1.07°C. Natural drivers, the sun and volcanoes, changed global temperature by about −0.1°C to +0.1°C. Well-mixed greenhouse gases likely warmed the surface by 1.0°C to 2.0°C. Other human effects, mainly tiny particles called aerosols, likely cooled it by 0°C to 0.8°C.",
+        "Those sentences are about the past. They are not a forecast of the year 2100."
       ]
     },
     "disagree": {
-      "placeholder": true,
       "paragraphs": [
-        "This section will separate arguments about what the measurements show, arguments about how bad the effects may be, and arguments about what the government should require. Those are related, and they are not the same fight."
+        "The amount of carbon dioxide in the air, and the rise in the measured temperature, are not the main fight. The fight is about two questions that often get mashed together: how much harm further warming will do, and what governments should require people and companies to do.",
+        "Future warming depends on how much greenhouse gas people add, and on how sensitive the climate is to that gas. Equilibrium climate sensitivity is the warming scientists expect, eventually, if the amount of carbon dioxide in the air doubles. The IPCC’s 2021 science report gives a best estimate of 3°C, a likely range of 2.5°C to 4°C, and a very likely range of 2°C to 5°C. A wide range means the same emissions can lead to different amounts of warming.",
+        "The IPCC also publishes projections. A projection is a careful estimate, not a record of something that has already happened. Compared with 1850–1900, the average temperature for 2081–2100 is very likely to be 1.0°C to 1.8°C on a very low emissions path, 2.1°C to 3.5°C on a middle path, and 3.3°C to 5.7°C on a very high path. In every path they studied, warming continues until at least the middle of the century unless emissions fall deeply.",
+        "One side hears those ranges and says the high end is a reason to cut emissions now. The other side hears the same ranges and says a law should not be written as if the hottest path were already a fact, because changing the energy system has a cost."
       ]
     },
     "sides": {
-      "placeholder": true,
-      "intro": "Each column will hold one side’s strongest fair case, in plain language and at similar length. Neither case is written yet.",
+      "intro": "Each column is the strongest fair case for that view. The charts in a column are ones that view usually cites. They are drawn from data files downloaded for this page. Read the lines under a chart: what it shows, and what it does not show.",
       "a": {
-        "title": "One side’s strongest case",
+        "title": "Cut emissions, because the risk grows with the heat",
         "paragraphs": [
-          "This column will give the strongest fair case for one view, using checked facts. It will not use insults, and it is not written yet."
+          "This side starts with the measurements. The surface record rises, and the warmest years are the recent ones. Sea level measured by satellites is higher than it was in the 1990s. Late-summer Arctic ice covers less ocean than it did when those satellites began."
+        ],
+        "charts": ["surface-temp", "sea-level", "arctic-ice"],
+        "after": [
+          "The IPCC says human-caused climate change is already affecting many weather and climate extremes in every region. Since the 1950s, heavy rain has become more frequent and more intense over most land where the records are good enough to judge, and human influence is likely the main driver. With each additional bit of warming, hot extremes and heavy rain get more intense. Global sea level has risen faster since 1900 than in any century in at least the last 3,000 years, the IPCC says, with high confidence. In 2011–2020, late-summer Arctic sea ice area was smaller than at any time in at least the past 1,000 years, with medium confidence.",
+          "On the charts above, September Arctic ice was 7.05 million square kilometers in 1979 and 4.81 in 2026. The lowest September in the file is 2012, at 3.57, so the ice has not fallen in a straight line. It is still far below the start of the record. From the 1993 satellite average to the 2024 average, global sea level on NOAA’s record rose 103 millimeters, about 10 centimeters.",
+          "This side says waiting makes the later cuts steeper if the world still wants one of the lower paths. It also says people who did the least to cause the emissions are often the most exposed to the heat, the rain, and the water.",
+          "The honest version of this view does not pretend that energy can be swapped out for free, or that one country’s law sets the whole world’s temperature. It says the cost of landing on a high warming path is the bigger risk, so it is worth paying to cut emissions now and to get ready for heat, floods, and higher seas."
         ]
       },
       "b": {
-        "title": "The other side’s strongest case",
+        "title": "Count the warming, and weigh the cost of the rules",
         "paragraphs": [
-          "This column will give the strongest fair case for the other view, under the same rules. It is not written yet."
+          "This side does not have to deny the thermometer. The satellite record of the lower atmosphere rises too. From 1979 through 2025 it rises a bit more slowly than NOAA’s surface record. The two instruments are not looking at the same layer of air."
+        ],
+        "charts": ["uah-vs-surface", "disaster-deaths", "loss-gdp", "cereal-yield"],
+        "after": [
+          "The IPCC’s own report says there is low confidence in long-term trends in the number of tropical cyclones of all strengths. It also says the share of major cyclones, category 3 to 5, has likely increased over about forty years. Drought is regional: human influence has contributed to more agricultural and ecological drought in some regions, and the report does not describe one worldwide drought trend of a single kind. A hotter planet is not the same sentence as “every kind of storm has become more common.”",
+          "The same deaths, counted per 100,000 people, are far below the famine decades of the early 1900s. The 1920s rate on this chart is 24.60 deaths per 100,000 people per year. The 2010s rate is 0.24. They are not a straight slide. The 2020–2025 rate is 0.58, and almost all of that rise is the extreme-temperature category in 2022, 2023, and 2024. That category includes extreme heat and extreme cold. Our World in Data says those deaths are often counted only after extra analysis, and that some places increasingly do that work, so a jump is hard to read as only a change in the weather. Weather-disaster losses as a share of the world economy, in Roger Pielke Jr.’s 2018 series from Munich Re data, bounce between 0.10% and 0.48% of GDP from 1990 through 2017. They do not climb in a straight line, and the file stops in 2017.",
+          "World cereal yields rose from 1.35 tonnes per hectare in 1961 to 4.21 in 2024. A 2016 satellite study led by Zaichun Zhu, and described by NASA, found that from a quarter to a half of Earth’s vegetated land greened between 1982 and 2015. The researchers attributed about 70% of that greening to extra carbon dioxide and about 9% to nitrogen. They also said plants can adjust so the fertilizer effect fades, and that carbon dioxide still traps heat. This page does not chart that study, because the public write-up is a map and a set of shares, not a yearly table this site downloaded.",
+          "In 2024, fossil fuels were 82% of the energy used in the United States: petroleum 38%, natural gas 36%, and coal 8%. In 2022, U.S. energy-related carbon dioxide from fossil fuels was 4,941 million metric tons, out of a world total of 38,502 million in the same table, about 13%. A U.S. rule does not, by itself, set the world’s temperature.",
+          "The honest version of this view agrees that the air has more carbon dioxide, that the Earth has warmed, and that the IPCC finds people to be the main cause. The argument is that harm has to be counted in lives and costs, not only in degrees, and that replacing most of an energy system has a price. Money spent as if the hottest projection were already certain cannot also be spent on warnings, stronger buildings, or research."
         ]
       }
     },
     "agree": {
-      "placeholder": true,
       "paragraphs": [
-        "This section will look for ground that does not depend on pretending the science fight and the policy fight are identical. Shared goals might include wanting honest measurements and wanting to avoid waste."
+        "Both sides can use the same measurements. Carbon dioxide in the air is higher than it was in 1959. The surface and the lower atmosphere are both warmer than they were in 1979. A baseline has to be named, or two true temperature numbers look like a quarrel."
+      ],
+      "bullets": [
+        "Projections are not promises. The IPCC’s very likely range for climate sensitivity, 2°C to 5°C, is wide on purpose.",
+        "A death rate and a temperature are different measurements. Fewer reported deaths per person do not erase the warming. The warming does not, by itself, tell you how many people will die.",
+        "High-confidence findings and low-confidence findings in the same IPCC report both belong in the story. Leaving one of them out changes it.",
+        "People need energy they can afford and count on. They also need protection from heat, floods, and higher water."
       ]
     },
     "questions": {
-      "placeholder": true,
+      "intro": "These questions do not have an answer printed under them.",
       "items": [
-        "The questions will ask what would count as good evidence, and what a fair policy would still have to decide even if the measurements were not in dispute."
+        "NOAA’s surface record and the satellite record both rise from 1979 to 2025, at about 0.20°C and about 0.16°C per decade. What would you need to know before you said one of them was wrong?",
+        "The IPCC’s very likely range for climate sensitivity is 2°C to 5°C. How should a law treat a range that wide?",
+        "September Arctic ice was lowest in 2012, not in the latest year, and it is still well below 1979. What can one year prove, and what can it not prove?",
+        "The death rate per 100,000 people is much lower than a century ago, and the 2020–2025 rate is higher than the 2010s, mostly from extreme-temperature deaths in 2022, 2023, and 2024. What, besides the weather, can change that rate?",
+        "Disaster losses as a share of the world economy did not climb in a straight line from 1990 to 2017, and that file stops in 2017. What would you want to see after 2017 before you updated the conclusion?",
+        "Extra carbon dioxide helps plants grow in the 2016 greening study, and it also traps heat. How should that change the way we talk about it?"
       ]
     }
   },
-  "words": [],
+  "words": [
+    {
+      "term": "Greenhouse gas",
+      "meaning": "A gas that holds heat in the atmosphere. Carbon dioxide, methane, and water vapor are greenhouse gases. The planet needs some of this effect. The argument is about the extra gas people add."
+    },
+    {
+      "term": "Parts per million",
+      "meaning": "A way to count a rare gas. 427 parts per million of carbon dioxide means 427 molecules of that gas in every million molecules of dry air."
+    },
+    {
+      "term": "Baseline",
+      "meaning": "The years a temperature number is compared with. NOAA’s surface chart on this page uses 1901–2000. A satellite chart may use 1991–2020. The warming can be the same when the printed degree number is not."
+    },
+    {
+      "term": "Projection",
+      "meaning": "A careful estimate of the future, built from assumptions about emissions and about how the climate responds. It is not a record of what has already happened."
+    },
+    {
+      "term": "Climate sensitivity",
+      "meaning": "How much the world is expected to warm, eventually, if the amount of carbon dioxide in the air doubles. The IPCC gives a best estimate and a range, not one certain number."
+    },
+    {
+      "term": "Emissions",
+      "meaning": "Greenhouse gases released into the air. Burning coal, oil, and natural gas is the largest energy-related source. Clearing forests is another."
+    }
+  ],
   "sources": [
     {
-      "title": "U.S. Environmental Protection Agency: Climate Change Indicators",
-      "url": "https://www.epa.gov/climate-indicators",
-      "note": "An official indicator set this page will read before any climate number is added. NASA’s climate pages will be checked too. Nothing is copied here yet."
+      "title": "NOAA Mauna Loa carbon dioxide, annual means",
+      "url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_mlo.txt",
+      "note": "Yearly carbon dioxide at Mauna Loa, including 315.98 ppm in 1959 and 427.35 ppm in 2025. Retrieved November 21, 2026. Early years in the file are Keeling’s Scripps measurements."
+    },
+    {
+      "title": "NOAA Climate at a Glance, global temperature",
+      "url": "https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series",
+      "note": "Monthly global land-and-ocean departures from the 1901–2000 average. This page averages the twelve months of each year. In that file, 2024 is the warmest year and 2025 is the third warmest."
+    },
+    {
+      "title": "UAH satellite lower-troposphere temperature, version 6.1",
+      "url": "https://www.nsstc.uah.edu/data/msu/v6.1/tlt/uahncdc_lt_6.1.txt",
+      "note": "Spencer and Christy, University of Alabama in Huntsville. Global column, reference period 1991–2020. The file prints a globe trend of 0.16°C per decade. The 0.16 and 0.20 figures in the text are straight lines fitted to the yearly averages from 1979 through 2025."
+    },
+    {
+      "title": "NOAA satellite sea level",
+      "url": "https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/slr/slr_sla_gbl_free_all_66.csv",
+      "note": "Global mean sea level anomaly, 66°S to 66°N. The file header states a trend of 3.17 millimeters per year with no glacial isostatic adjustment. Altimetry data are provided by the NOAA Laboratory for Satellite Altimetry."
+    },
+    {
+      "title": "NSIDC Sea Ice Index, September Arctic extent",
+      "url": "https://noaadata.apps.nsidc.org/NOAA/G02135/north/monthly/data/N_09_extent_v4.0.csv",
+      "note": "September Arctic sea ice extent. 7.05 million square kilometers in 1979, 3.57 in 2012, and 4.81 in 2026."
+    },
+    {
+      "title": "IPCC Sixth Assessment, Working Group I Summary for Policymakers",
+      "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/summary-for-policymakers/",
+      "note": "Climate sensitivity, the emissions-path ranges for 2081–2100, sea level since 1900, Arctic ice, heavy rain, drought, and tropical cyclones. The 2021 physical-science report."
+    },
+    {
+      "title": "IPCC Sixth Assessment, Synthesis Report headline statements",
+      "url": "https://www.ipcc.ch/report/ar6/syr/resources/spm-headline-statements/",
+      "note": "The 2023 summary that human activities have unequivocally caused global warming, and the 1.1°C figure for 2011–2020. The more precise 1.09°C range is in the longer summary."
+    },
+    {
+      "title": "Deaths from natural disasters, EM-DAT via Our World in Data",
+      "url": "https://ourworldindata.org/grapher/natural-disasters-deaths",
+      "note": "EM-DAT, CRED / UCLouvain (2026). This page adds world deaths from droughts, floods, storms, wildfires, and extreme temperatures. The chart is deaths per 100,000 people per year: total deaths in the years divided by the sum of those years’ world population, times 100,000. Earthquakes, volcanoes, and landslides are left out. Our World in Data says extreme-temperature deaths are often indirect and counted only with extra analysis, that some places increasingly do that work, and that the records are too incomplete for an easy trend."
+    },
+    {
+      "title": "World population, 1900–2025",
+      "url": "https://ourworldindata.org/grapher/population",
+      "note": "Retrieved November 21, 2026. 1900–1949 is Gapminder v7 (2022). 1950–2023 is the UN World Population Prospects 2024 estimates. 2024 (8,161,972,574) and 2025 (8,231,613,067) are that edition’s medium-variant projections, from https://ourworldindata.org/grapher/population-with-un-projections. The 1950–2023 estimates match in both files."
+    },
+    {
+      "title": "Weather disaster losses as a share of GDP",
+      "url": "https://ourworldindata.org/grapher/weather-losses-share-gdp",
+      "note": "Munich Re losses divided by world GDP, 1990–2017, from Roger Pielke Jr., “Tracking progress on the economic costs of disasters under the indicators of the sustainable development goals,” Environmental Hazards (2018), as processed by Our World in Data."
+    },
+    {
+      "title": "World cereal yield",
+      "url": "https://ourworldindata.org/grapher/cereal-yield",
+      "note": "Food and Agriculture Organization data compiled by Our World in Data. World cereal yield was 1.35 tonnes per hectare in 1961 and 4.21 in 2024."
+    },
+    {
+      "title": "NASA summary of Zhu and others, 2016, on global greening",
+      "url": "https://www.nasa.gov/centers-and-facilities/goddard/carbon-dioxide-fertilization-greening-earth-study-finds/",
+      "note": "Describes Zhu et al., Nature Climate Change (2016): a quarter to a half of vegetated land greened from 1982 to 2015, with about 70% of the greening attributed to carbon dioxide and about 9% to nitrogen. Not charted here, because this page did not download a yearly leaf-area table."
+    },
+    {
+      "title": "U.S. Energy Information Administration, energy use in 2024",
+      "url": "https://www.eia.gov/energyexplained/us-energy-facts/data-and-statistics.php",
+      "note": "In the 2024 consumption table, petroleum is 38%, natural gas 36%, and coal 8%, which is 82% from fossil fuels. EIA’s Today in Energy note on the same year also states the 82% fossil share: https://www.eia.gov/todayinenergy/detail.php?id=65644"
+    },
+    {
+      "title": "EIA, U.S. and world energy-related carbon dioxide, 2022",
+      "url": "https://www.eia.gov/tools/faqs/faq.php?id=79&t=4",
+      "note": "United States 4,941 million metric tons and world 38,502 million metric tons of energy-related carbon dioxide from fossil fuels in 2022. The U.S. share is about 13%."
     },
     {
       "title": "Just Facts: Global Warming",
       "url": "https://www.justfacts.org/globalwarming",
-      "note": "Further reading for later. A long, technical research page. This outline does not copy it."
+      "note": "Further reading. A long, technical research page from a private nonprofit. This site did not copy its wording or charts."
     }
   ]
 }

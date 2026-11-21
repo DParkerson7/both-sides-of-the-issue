@@ -2,7 +2,7 @@
 
 A small static website that explains divisive U.S. public issues in plain language for grades 6–8. Each issue gives the strongest fair case for each side, so disagreement is easier to understand and harder to fake.
 
-Social Security is the first finished page. The other eleven starter issues are outlines marked **Coming soon**. Those pages do not include statistics.
+Social Security and Global Warming are finished pages. The other ten starter issues are outlines marked **Coming soon**. Those outlines do not include statistics.
 
 The wording on this site is original. [Just Facts](https://www.justfacts.org/) is a research lead and a “read further” link, not a source of copied sentences, charts, or page structure. This project is not affiliated with Just Facts, and it is not legal, tax, or investment advice.
 
@@ -62,7 +62,9 @@ Do not invent a number to fill a gap. If a figure is not in a source you checked
 }
 ```
 
-Paragraphs can include `**bold**` and links written as `[label](https://example.gov/)`. Icons already in the builder: `shield`, `bolt`, `globe`, `book`, `coins`, `layers`, `plus`, `door`, `message`, `scales`, `house`, `badge`. Add a new icon in `scripts/build.mjs` if you need one.
+Paragraphs can include `**bold**` and links written as `[label](https://example.gov/)`. A section can also include `"charts": ["chart-id"]` and an `"after"` list of paragraphs that should sit under the charts. Define each chart once, on the issue, in a top-level `"charts"` array. Point `dataFile` at a CSV in `content/data/`. The builder draws an inline SVG, a caption (what the chart shows, what it does not show, which argument usually cites it, and the source), and a table of the numbers. `type` is `"line"` or `"bar"`. Line charts include zero on the axis unless you set `"includeZero": false`. Do not trim an axis to make a change look bigger.
+
+Icons already in the builder: `shield`, `bolt`, `globe`, `book`, `coins`, `layers`, `plus`, `door`, `message`, `scales`, `house`, `badge`. Add a new icon in `scripts/build.mjs` if you need one.
 
 On a published page, remove `"placeholder": true`. On an outline, leave it, so the page shows a Coming soon label.
 
