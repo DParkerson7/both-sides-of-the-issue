@@ -100,18 +100,24 @@
     {
       "id": "disaster-deaths",
       "type": "bar",
-      "title": "Reported deaths from weather and climate disasters",
-      "shows": "The average number of reported deaths per year, by decade, from droughts, floods, storms, wildfires, and extreme heat and cold. Earthquakes, volcanoes, and landslides are not included. The 1900s average about 128,000 deaths a year. The 2010s average about 18,000. The last bar is only 2020 through 2025, six years, and it averages about 46,000, higher than the 2010s. The single highest year in the file is 1931, at about 3.7 million. The axis starts at zero.",
-      "doesNotShow": "That dangerous weather has become rare. Deaths can fall because of warnings, food aid, medicine, and stronger buildings even if the weather gets harsher. A few huge famines dominate the early decades. EM-DAT counts confirmed deaths plus missing people.",
-      "citedFor": "The cost-of-policy case: the human toll counted in this record is much lower than it was a century ago, even though the world has more people.",
-      "sourceName": "EM-DAT, CRED / UCLouvain, processed by Our World in Data",
+      "title": "Weather and climate disaster deaths per 100,000 people",
+      "shows": "Reported deaths per 100,000 people per year, by decade, from droughts, floods, storms, wildfires, and extreme heat and cold. Each bar divides the deaths by how many people were alive, so a bigger world does not by itself make the bar taller. Earthquakes, volcanoes, and landslides are not included. The 1920s are the highest bar, 24.60 deaths per 100,000 people per year. The 2010s are 0.24. The last bar is only 2020 through 2025, six years, and its rate is 0.58. Almost all of that rise above the 2010s is the extreme-temperature category, and most of those deaths are in 2022, 2023, and 2024. Extreme temperature here means both extreme heat and extreme cold. Our World in Data says these deaths are often counted only when someone does extra analysis, that some places increasingly do that work, and that the records are too incomplete to read the jump as only a change in the weather. Population for 1900–1949 is Gapminder. For 1950–2023 it is the UN World Population Prospects 2024 estimates. For 2024 and 2025 it is that edition’s medium projection, not a census. The axis starts at zero.",
+      "doesNotShow": "That dangerous weather has become rare. A lower rate can come from warnings, food, medicine, and stronger buildings. The tall early bars are mostly a few huge famines. The extra chart below shows the same decades as raw death counts, before dividing by population.",
+      "citedFor": "The cost-of-policy case: after adjusting for population, the death rate in this record is much lower than it was a century ago.",
+      "sourceName": "EM-DAT via Our World in Data, with world population from Gapminder and the UN",
       "sourceUrl": "https://ourworldindata.org/grapher/natural-disasters-deaths",
       "retrieved": "November 21, 2026",
-      "dataFile": "content/data/climate-disaster-deaths-decadal.csv",
+      "dataFile": "content/data/climate-disaster-death-rate.csv",
       "x": "period",
-      "y": "deaths_per_year",
-      "columns": ["period", "deaths_per_year"],
-      "decimals": 0
+      "y": "rate_per_100k",
+      "columns": ["period", "rate_per_100k", "raw_deaths_per_year"],
+      "yLabel": "Deaths per 100,000 people per year",
+      "xLabel": "Decade",
+      "decimals": 2,
+      "rawColumn": "raw_deaths_per_year",
+      "rawLabel": "Average reported deaths per year, not adjusted for population",
+      "rawSummary": "See the same decades as raw death counts",
+      "rawNote": "These bars are the average number of reported deaths per year before dividing by population. A larger world makes them taller even when the risk to each person is the same."
     },
     {
       "id": "loss-gdp",
@@ -196,7 +202,7 @@
         "charts": ["uah-vs-surface", "disaster-deaths", "loss-gdp", "cereal-yield"],
         "after": [
           "The IPCC’s own report says there is low confidence in long-term trends in the number of tropical cyclones of all strengths. It also says the share of major cyclones, category 3 to 5, has likely increased over about forty years. Drought is regional: human influence has contributed to more agricultural and ecological drought in some regions, and the report does not describe one worldwide drought trend of a single kind. A hotter planet is not the same sentence as “every kind of storm has become more common.”",
-          "Reported deaths from droughts, floods, storms, wildfires, and extreme temperatures are far below the famine decades of the early 1900s. They are not a straight slide, though. The 2020–2025 average is higher than the 2010s. Weather-disaster losses as a share of the world economy, in Roger Pielke Jr.’s 2018 series from Munich Re data, bounce between 0.10% and 0.48% of GDP from 1990 through 2017. They do not climb in a straight line, and the file stops in 2017.",
+          "The same deaths, counted per 100,000 people, are far below the famine decades of the early 1900s. The 1920s rate on this chart is 24.60 deaths per 100,000 people per year. The 2010s rate is 0.24. They are not a straight slide. The 2020–2025 rate is 0.58, and almost all of that rise is the extreme-temperature category in 2022, 2023, and 2024. That category includes extreme heat and extreme cold. Our World in Data says those deaths are often counted only after extra analysis, and that some places increasingly do that work, so a jump is hard to read as only a change in the weather. Weather-disaster losses as a share of the world economy, in Roger Pielke Jr.’s 2018 series from Munich Re data, bounce between 0.10% and 0.48% of GDP from 1990 through 2017. They do not climb in a straight line, and the file stops in 2017.",
           "World cereal yields rose from 1.35 tonnes per hectare in 1961 to 4.21 in 2024. A 2016 satellite study led by Zaichun Zhu, and described by NASA, found that from a quarter to a half of Earth’s vegetated land greened between 1982 and 2015. The researchers attributed about 70% of that greening to extra carbon dioxide and about 9% to nitrogen. They also said plants can adjust so the fertilizer effect fades, and that carbon dioxide still traps heat. This page does not chart that study, because the public write-up is a map and a set of shares, not a yearly table this site downloaded.",
           "In 2024, fossil fuels were 82% of the energy used in the United States: petroleum 38%, natural gas 36%, and coal 8%. In 2022, U.S. energy-related carbon dioxide from fossil fuels was 4,941 million metric tons, out of a world total of 38,502 million in the same table, about 13%. A U.S. rule does not, by itself, set the world’s temperature.",
           "The honest version of this view agrees that the air has more carbon dioxide, that the Earth has warmed, and that the IPCC finds people to be the main cause. The argument is that harm has to be counted in lives and costs, not only in degrees, and that replacing most of an energy system has a price. Money spent as if the hottest projection were already certain cannot also be spent on warnings, stronger buildings, or research."
@@ -209,7 +215,7 @@
       ],
       "bullets": [
         "Projections are not promises. The IPCC’s very likely range for climate sensitivity, 2°C to 5°C, is wide on purpose.",
-        "A death toll and a temperature are different measurements. Fewer reported deaths do not erase the warming. The warming does not, by itself, tell you how many people will die.",
+        "A death rate and a temperature are different measurements. Fewer reported deaths per person do not erase the warming. The warming does not, by itself, tell you how many people will die.",
         "High-confidence findings and low-confidence findings in the same IPCC report both belong in the story. Leaving one of them out changes it.",
         "People need energy they can afford and count on. They also need protection from heat, floods, and higher water."
       ]
@@ -220,7 +226,7 @@
         "NOAA’s surface record and the satellite record both rise from 1979 to 2025, at about 0.20°C and about 0.16°C per decade. What would you need to know before you said one of them was wrong?",
         "The IPCC’s very likely range for climate sensitivity is 2°C to 5°C. How should a law treat a range that wide?",
         "September Arctic ice was lowest in 2012, not in the latest year, and it is still well below 1979. What can one year prove, and what can it not prove?",
-        "Reported deaths from weather and climate disasters are much lower than a century ago, and the 2020–2025 average is higher than the 2010s. What, besides the weather, can change a death toll?",
+        "The death rate per 100,000 people is much lower than a century ago, and the 2020–2025 rate is higher than the 2010s, mostly from extreme-temperature deaths in 2022, 2023, and 2024. What, besides the weather, can change that rate?",
         "Disaster losses as a share of the world economy did not climb in a straight line from 1990 to 2017, and that file stops in 2017. What would you want to see after 2017 before you updated the conclusion?",
         "Extra carbon dioxide helps plants grow in the 2016 greening study, and it also traps heat. How should that change the way we talk about it?"
       ]
@@ -291,7 +297,12 @@
     {
       "title": "Deaths from natural disasters, EM-DAT via Our World in Data",
       "url": "https://ourworldindata.org/grapher/natural-disasters-deaths",
-      "note": "EM-DAT, CRED / UCLouvain (2026). This page adds world deaths from droughts, floods, storms, wildfires, and extreme temperatures, then averages them by decade. Earthquakes, volcanoes, and landslides are left out."
+      "note": "EM-DAT, CRED / UCLouvain (2026). This page adds world deaths from droughts, floods, storms, wildfires, and extreme temperatures. The chart is deaths per 100,000 people per year: total deaths in the years divided by the sum of those years’ world population, times 100,000. Earthquakes, volcanoes, and landslides are left out. Our World in Data says extreme-temperature deaths are often indirect and counted only with extra analysis, that some places increasingly do that work, and that the records are too incomplete for an easy trend."
+    },
+    {
+      "title": "World population, 1900–2025",
+      "url": "https://ourworldindata.org/grapher/population",
+      "note": "Retrieved November 21, 2026. 1900–1949 is Gapminder v7 (2022). 1950–2023 is the UN World Population Prospects 2024 estimates. 2024 (8,161,972,574) and 2025 (8,231,613,067) are that edition’s medium-variant projections, from https://ourworldindata.org/grapher/population-with-un-projections. The 1950–2023 estimates match in both files."
     },
     {
       "title": "Weather disaster losses as a share of GDP",

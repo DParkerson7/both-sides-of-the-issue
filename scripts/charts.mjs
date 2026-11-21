@@ -57,6 +57,17 @@ function formatTick(value) {
   return value.toFixed(2).replace(/0$/, "").replace(/\.$/, "");
 }
 
+function formatValue(value, decimals) {
+  if (decimals === 0) return Math.round(value).toLocaleString("en-US");
+  if (decimals > 0) {
+    return value.toLocaleString("en-US", {
+      minimumFractionDigits: decimals,
+      maximumFractionDigits: decimals,
+    });
+  }
+  return formatTick(value);
+}
+
 function domain(values, includeZero) {
   let min = Math.min(...values);
   let max = Math.max(...values);
@@ -190,17 +201,36 @@ export function renderChart(chart, root) {
     const points = rows.map((row) => ({
       label: row[chart.x],
       y: Number(row[chart.y]),
-      valueLabel: chart.valueLabels ? chart.valueLabels[row[chart.x]] || formatTick(Number(row[chart.y])) : formatTick(Number(row[chart.y])),
+      valueLabel: formatValue(Number(row[chart.y]), chart.decimals),
     }));
-    if (chart.decimals === 0) {
-      for (const point of points) point.valueLabel = Math.round(point.y).toLocaleString("en-US");
-    }
     drawing = barChart(chart, points);
-    table = tableHtml(
-      chart,
-      [{ label: chart.xLabel || "Period" }, { label: chart.yLabel || "Value" }],
-      rows.map((row) => [row[chart.x], formatTick(Number(row[chart.y]))]),
-    );
+    const tableColumns = [
+      { label: chart.xLabel || "Period" },
+      { label: chart.yLabel || "Value" },
+    ];
+    const tableRows = rows.map((row) => [row[chart.x], formatValue(Number(row[chart.y]), chart.decimals)]);
+    if (chart.rawColumn) {
+      tableColumns.push({ label: chart.rawLabel || "Raw count" });
+      rows.forEach((row, index) => {
+        tableRows[index].push(formatValue(Number(row[chart.rawColumn]), 0));
+      });
+    }
+    table = tableHtml(chart, tableColumns, tableRows);
+    if (chart.rawColumn) {
+      const rawPoints = rows.map((row) => ({
+        label: row[chart.x],
+        y: Number(row[chart.rawColumn]),
+        valueLabel: formatValue(Number(row[chart.rawColumn]), 0),
+      }));
+      const rawDrawing = barChart({ xLabel: "" }, rawPoints);
+      table += `<details class="chart-data">
+        <summary>${escapeHtml(chart.rawSummary || "See the raw counts")}</summary>
+        <svg viewBox="0 0 ${rawDrawing.width} ${rawDrawing.height}" role="img" aria-label="${escapeHtml(chart.rawSummary || "Raw counts")}">
+          ${rawDrawing.body}
+        </svg>
+        <p class="chart-note">${escapeHtml(chart.rawNote || "These are the same decades before dividing by population.")}</p>
+      </details>`;
+    }
   } else {
     throw new Error(`Unknown chart type ${chart.type}`);
   }
